@@ -1,3 +1,9 @@
+name: Check docker image
+
+on:
+  schedule:
+    - cron:  '0 4 * * *'
+
 jobs:
   docker:
     runs-on: ubuntu-latest
